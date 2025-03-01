@@ -6,7 +6,7 @@ public class FormatadorCep {
         System.out.println(cepFormatado);
     } 
     catch (CepInvalidoException e) {
-            System.out.println("O cep não corrresponde com as regras.");;    }
+            System.out.println("O cep não corrresponde com as regras.");    }
         
     }
     static String formatarCep(String cep) throws CepInvalidoException{

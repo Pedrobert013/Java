@@ -1,4 +1,4 @@
-package dados;
+package dados.service;
 
 import java.util.Locale;
 import  java.util.Scanner;
@@ -16,13 +16,13 @@ public class LancadorDeDadosRPG{
         System.out.println("Insira qual dado você quer usar: ");
         String resposta = pergunta.nextLine();
         
-        if("d20".equalsIgnoreCase(resposta.toLowerCase(Locale.getDefault()))){
+        if("d20".equals(resposta.toLowerCase(Locale.getDefault()))){
         d20();
         }
-        else if("d12".equalsIgnoreCase(resposta.toLowerCase(Locale.getDefault()))){
+        else if("d12".equals(resposta.toLowerCase(Locale.getDefault()))){
         d12();
         }
-        else if("d10".equalsIgnoreCase(resposta.toLowerCase(Locale.getDefault()))){
+        else if("d10".equals(resposta.toLowerCase(Locale.getDefault()))){
         d10();
         }
         else if("d8".equalsIgnoreCase(resposta.toLowerCase(Locale.getDefault()))){
